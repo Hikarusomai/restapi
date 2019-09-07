@@ -1,0 +1,547 @@
+Started GET "/" for 127.0.0.1 at 2017-06-27 11:59:37 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 468ms (Views: 28.7ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(2253939812606074005, 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170627160121')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-06-27 16:02:36', '2017-06-27 16:02:36')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(2253939812606074005)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Mr Standfast', 'Expedita praesentium error laboriosam vitae repellat quasi et ex.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('The Torment of Others', 'At ex labore quo veritatis ab.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Of Human Bondage', 'Dicta deleniti omnis a.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('A Swiftly Tilting Planet', 'Odio perspiciatis quisquam corporis possimus.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Rosemary Sutcliff', 'Sequi aut aut similique.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:22:47 -0400
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:23:00 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:23:01 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:25:07 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/" for 127.0.0.1 at 2017-06-27 12:26:44 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 33ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:28:36 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:29:32 -0400
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `ok' for #<Api::V1::ArticlesController:0x5a40710>):
+  
+app/controllers/api/v1/articles_controller.rb:6:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:30:04 -0400
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 23ms (Views: 8.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/api/v1/articles/1" for 127.0.0.1 at 2017-06-27 12:35:51 -0400
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/3" for 127.0.0.1 at 2017-06-27 12:35:57 -0400
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:45:22 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Article One", "body"=>"This is the body", "article"=>{"title"=>"Article One", "body"=>"This is the body"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:10 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Article One", "body"=>"This is the body", "article"=>{"title"=>"Article One", "body"=>"This is the body"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:33 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"{\n\t\"title\":\"Article One\",\n\t\"body\":\"This is the body\"\n}"=>nil}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:46 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"------WebKitFormBoundarysZOXl7nJAA9AxT8o\r\nContent-Disposition: form-data; name"=>"\"title\"\r\n\r\ntest\r\n------WebKitFormBoundarysZOXl7nJAA9AxT8o\r\nContent-Disposition: form-data; name=\"body\"\r\n\r\ntest\r\n------WebKitFormBoundarysZOXl7nJAA9AxT8o--\r\n"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:48:35 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"------WebKitFormBoundaryGqMshLJyjI1KPlxr\r\nContent-Disposition: form-data; name"=>"\"title\"\r\n\r\ntest\r\n------WebKitFormBoundaryGqMshLJyjI1KPlxr\r\nContent-Disposition: form-data; name=\"body\"\r\n\r\ntest\r\n------WebKitFormBoundaryGqMshLJyjI1KPlxr--\r\n"}
+Unpermitted parameter: :------WebKitFormBoundaryGqMshLJyjI1KPlxr
+Content-Disposition: form-data; name
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 284ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:53:47 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Test Article One", "body"=>"This is the body", "article"=>{"title"=>"Test Article One", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test Article One', 'This is the body', '2017-06-27 16:53:47', '2017-06-27 16:53:47')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/v1/articles/6" for 127.0.0.1 at 2017-06-27 12:56:45 -0400
+Processing by Api::V1::ArticlesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM `articles` WHERE `articles`.`id` = 6[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+
+
+Started PUT "/api/v1/articles/5" for 127.0.0.1 at 2017-06-27 12:59:30 -0400
+Processing by Api::V1::ArticlesController#update as */*
+  Parameters: {"title"=>"Updated Title", "body"=>"Updated Body", "id"=>"5", "article"=>{"title"=>"Updated Title", "body"=>"Updated Body"}}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `articles` SET `title` = 'Updated Title', `body` = 'Updated Body', `updated_at` = '2017-06-27 16:59:30' WHERE `articles`.`id` = 5[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+  [1m[35m (30.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK(559255656990293550, 0)[0m
+  [1m[35m (41.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(559255656990293550)[0m
+Started GET "/" for 127.0.0.1 at 2019-09-08 00:58:59 +0800
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.2) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 00:59:26 +0800
+  [1m[35m (10.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.2) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (51.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(559255656990293550, 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (269.9ms)[0m  [1m[35mCREATE TABLE `myblog` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170627160121')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(559255656990293550)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (13.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `myblog`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'myblog'[0m
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:00:54 +0800
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 90ms (Views: 13.3ms | ActiveRecord: 61.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-08 01:12:18 +0800
+  [1m[35m (3.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 181ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:12:24 +0800
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 57ms (Views: 24.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:15:04 +0800
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 34ms (Views: 10.4ms | ActiveRecord: 18.9ms)
+
+
+  [1m[35m (50.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(559255656990293550, 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(559255656990293550)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `myblog`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'myblog'[0m
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:20:40 +0800
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/1" for 127.0.0.1 at 2019-09-08 01:21:05 +0800
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+Completed 404 Not Found in 14ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/api/v1/articles_controller.rb:10:in `show'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:21:08 +0800
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/12" for 127.0.0.1 at 2019-09-08 01:21:48 +0800
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 12 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:23:47 +0800
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"title":"Test artical One",
+	"body":"this is body",
+}
+  
+ActionDispatch::Http::Parameters::ParseError (822: unexpected token at '{
+	"title":"Test artical One",
+	"body":"this is body",
+}'):
+  
+actionpack (5.1.2) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.2) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.2) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.2) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:24:03 +0800
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Test artical One", "body"=>"this is body", "article"=>{"title"=>"Test artical One", "body"=>"this is body"}}
+Unpermitted parameter: :article
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test artical One', 'this is body', '2019-09-07 17:24:03', '2019-09-07 17:24:03')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 41ms (Views: 3.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:27:01 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class myblog < ApplicationRecord
+              ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:27:13 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class myblog < ApplicationRecord
+              ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:28:20 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::ArticlesController::Article):
+  
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:31:54 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class myblog < ApplicationRecord
+              ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:32:09 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class myblog < ApplicationRecord
+              ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:32:23 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class article < ApplicationRecord
+               ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:32:49 +0800
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/restapi/app/models/article.rb:1: class/module name must be CONSTANT
+class article < ApplicationRecord
+               ^):
+  
+app/models/article.rb:1: class/module name must be CONSTANT
+app/controllers/api/v1/articles_controller.rb:5:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:33:54 +0800
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (11.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 152ms (Views: 70.3ms | ActiveRecord: 61.0ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2019-09-08 01:35:05 +0800
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Test artical One", "body"=>"this is body", "article"=>{"title"=>"Test artical One", "body"=>"this is body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test artical One', 'this is body', '2019-09-07 17:35:05', '2019-09-07 17:35:05')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/api/v1/articles/7" for 127.0.0.1 at 2019-09-08 01:35:33 +0800
+Processing by Api::V1::ArticlesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (15.1ms)[0m  [1m[31mDELETE FROM `articles` WHERE `articles`.`id` = 7[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 94ms (Views: 1.5ms | ActiveRecord: 15.1ms)
+
+
