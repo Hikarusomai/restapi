@@ -1,3 +1,3 @@
 # RAILS 5 REST API
 
-Test basic REST API, CRUD functiobs using mysql
+Test basic REST API, CRUD functions, mysql database
